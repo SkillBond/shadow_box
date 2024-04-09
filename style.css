@@ -1,0 +1,228 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+:root
+{
+    --clr1: #A8A8A8;
+    --clr2: #55ADFF;
+    --clr3: white;
+    --clr4: #DDDEE0;
+    --clr5: #0084ff;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr4);
+}
+
+.header 
+{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70px;
+    width: 100%;
+
+    border-bottom: 2px solid var(--clr1);
+    background-color: var(--clr3);
+}
+
+.name
+{
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.showCode
+{
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin-right: 40px;
+    background-color: var(--clr2);
+    border: none;
+    border-radius: 6px;
+
+    color: var(--clr3);
+    cursor: pointer;
+}
+
+.settingsAll
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    top: 70px;
+
+    width: 250px;
+    height: calc(100% - 140px);
+    border-right: 2px solid var(--clr1);
+
+    background-color: var(--clr3);
+}
+
+.boxSettings
+{
+    width: 100%;
+}
+
+.settingsMenu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    padding-inline: 15px;
+
+    border-bottom: 2px solid var(--clr1);
+}
+
+.ShadowSettings {
+    font-size: 1.75rem;
+}
+/*  */
+#arrow
+{
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.colorSettings
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    width: 100%;
+    height: 100px;
+    padding-inline: 15px;
+
+    border-top: 2px solid var(--clr1); 
+}
+
+.colorChanger
+{
+    border: none;
+    background-color: #00000000;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.blockArea
+{
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 70px;
+    left: 250px;
+    padding: 10px;
+
+    width: calc(100% - 250px);
+    height: calc(100vh - 140px);
+}
+
+.block
+{
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--clr3);
+
+    border: 1px solid var(--clr3);
+}
+
+.footer
+{
+    position: fixed;
+    top: calc(100% - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: var(--clr3);
+    border-top: 2px solid var(--clr1);
+}
+
+.boxMenu
+{
+    display: none;
+    position: absolute;
+
+    padding: 15px;
+    width: 200px;
+
+    background-color: var(--clr3);
+    border: 2px solid var(--clr1);
+    border-radius:  30px;
+}
+
+.active
+{
+    display: block;
+}
+
+.boxMenuContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.inputChanger
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 7px;
+}
+
+.inputChangerLine
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  100%;
+}
+
+.input
+{
+    text-align: center;
+    font-size: .9rem;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--clr1);
+}
+
+input:focus
+{
+    outline: none;
+    border-color:var(--clr5);
+}

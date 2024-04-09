@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <style type="script.js"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <!-- раздел для размещения информации о проекте-->
+        <header class="header">
+            <h1 class="name">Box Shadow</h1>
+            <button class="showCode"><h1>Show code</h1></button>
+        </header>
+        <!-- раздел с функциональной частью сайта -->
+        <div class="settingsAll">
+            <!-- раздел с настройками блока -->
+            <div class="boxSettings">
+                <div class="settingsMenu">
+                    <p class="Text">Box</p>
+                    <img id="arrow" src="./img/Arrow.svg" alt="arrow"> <!--button only-->
+                </div>
+            <!-- раздел с настройками тени блока -->
+            <div class="ShadowSettings">
+                <div class="settingsMenu">
+                    <p class="Text">Shadow</p>
+                    <img id="arrow" src="./img/Arrow.svg" alt="arrow"> <!--button only-->
+                </div>
+            <!-- раздел с настройками цвета фона -->
+                <div class="colorSettings">
+                    <p class="palettecolor">Color</p>
+                    <input class="colorChanger" id="palette" type="color" value="#A8A8A8">
+                </div>
+            </div>
+            <!-- раздел с блоком -->
+            <div class="blockArea">
+                <div class="block"></div>
+            </div>
+            <!-- подвал -->
+            <footer class="footer">
+                <a href="https://github.com/SkillBond"> <img src="" alt="SkillBond github"></a>
+            </footer>
+            <div class="boxMenu" id="boxMenu">
+
+                <div class="boxMenuContent">
+                    <p class="customText">Parameters</p>
+    
+                    <div class="inputChanger">
+                        <div class="inputChangerLine">
+                            <h3>Width</h3>
+                            <input type="text" class="input" id="boxWidth" value="20">
+                        </div>
+                        <input type="range" id="boxWidthRange" min="0" max="40" value="20">
+                    </div>
+    
+                    <div class="inputChanger">
+                        <div class="inputChangerLine">
+                            <h3>Height</h3>
+                            <input type="text" class="input" id="boxHeight" value="20">
+                        </div>
+                        <input type="range" id="boxHeightRange" min="0" max="40" value="20">
+                    </div>
+    
+                    <div class="inputChanger">
+                        <div class="inputChangerLine">
+                            <h3>Border radius</h3>
+                            <input type="text" class="input" id="borderRadius" value="2">
+                        </div>
+                        <input type="range" id="borderRadiusRange" min="0" max="10" value="2">
+                    </div>
+    
+                    <div class="inputChangerLine">
+                        <h3>Border color</h3>
+                        <input class="colorChanger" id="borderPallete" type="color" value="#ffffff">
+                    </div>
+    
+                    <div class="inputChangerLine">
+                        <h3>Box color</h3>
+                        <input class="colorChanger" id="boxPallete" type="color" value="#ffffff">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
